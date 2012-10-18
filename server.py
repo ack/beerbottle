@@ -28,7 +28,7 @@ def plug_middle(chain):
     session_opts = {
         'session.type': 'file',
         'session.cookie_expires': 300,
-        'session.data_dir': './data',
+        'session.data_dir': './sessions',
         'session.auto': True
         }
     chain = SessionMiddleware(chain, session_opts)
